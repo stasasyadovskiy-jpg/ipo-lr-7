@@ -1,0 +1,46 @@
+{
+    "flowers": [
+        {
+            "id": 1,
+            "name": "Роза",
+            "latin_name": "Rosa",
+            "is_red_book_flower": false,
+            "price": "5$"
+        },
+        {
+            "id": 2,
+            "name": "Пион",
+            "latin_name": "Paeonia",
+            "is_red_book_flower": false,
+            "price": "10$"
+        },
+        {
+            "id": 3,
+            "name": "Ландыш",
+            "latin_name": "Convallaria majalis",
+            "is_red_book_flower": true,
+            "price": "25$"
+        },
+        {
+            "id": 4,
+            "name": "Орхидея",
+            "latin_name": "Orchidaceae",
+            "is_red_book_flower": false,
+            "price": "50$"
+        },
+        {
+            "id": 5,
+            "name": "Василёк",
+            "latin_name": "Centaurea cyanus",
+            "is_red_book_flower": true,
+            "price": "1$"
+        },
+        {
+            "id": 6,
+            "name": "Гамно",
+            "latin_name": "Gamno",
+            "is_red_book_flower": false,
+            "price": "25$"
+        }
+    ]
+}
