@@ -36,11 +36,11 @@
             "price": "1$"
         },
         {
-            "id": 6,
-            "name": "Гамно",
-            "latin_name": "Gamno",
-            "is_red_book_flower": false,
-            "price": "25$"
+            "id": 13,
+            "name": "Гэмс",
+            "latin_name": "Bems",
+            "is_red_book_flower": true,
+            "price": "безценна"
         }
     ]
 }
