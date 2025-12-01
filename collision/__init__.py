@@ -90,16 +90,3 @@ def intersectionAreaMultiRect(rectangles):
         if k == max_k:
             return rect_area(intersection)
     return 0
-rectangles = [
-    [(-3, 1), (9, 10)],
-    [(-7, 0), (13, 12)],
-    [(0, 0), (5, 5)],
-    [(2, 2), (7, 7)]
-]
-result = intersectionAreaMultiRect(rectangles)
-print(f"Уникальная площадь пересечения: {result}")
-incorrect_rectangles = [
-    [(-3, 1), (9, 10)],
-    [(3, 17), (13, 1)]
-]
-intersectionAreaMultiRect(incorrect_rectangles)

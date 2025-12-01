@@ -41,6 +41,13 @@
             "latin_name": "Bems",
             "is_red_book_flower": true,
             "price": "безценна"
+        },
+        {
+            "id": 27,
+            "name": "Грабель",
+            "latin_name": "Grabel",
+            "is_red_book_flower": true,
+            "price": "бесценен"
         }
     ]
 }
