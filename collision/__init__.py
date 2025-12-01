@@ -22,7 +22,28 @@ def isCollisionRect(rect1, rect2):
     return (x1_left <= x2_right and x1_right >= x2_left and
             y1_bottom <= y2_top and y1_top >= y2_bottom)
 
-# Вызовы функций
-print(isCollisionRect([(-3.4, 1),(9.2, 10)], [(-7.4, 0),(13.2, 12)]))
-print(isCollisionRect([(1, 1),(2, 2)], [(3, 0),(13, 1)]))
-print(isCollisionRect([(1, 1),(2, 2)], [(3, 17),(13, 1)]))
+def intersectionAreaRect(rect1, rect2):
+    if not isCorrectRect(rect1):
+        raise ValueError("1й прямоугольник некоректный")
+    if not isCorrectRect(rect2):
+        raise ValueError("2й прямоугольник некоректный")
+    if not isCollisionRect(rect1, rect2):
+        return 0
+    x1_left, y1_bottom = rect1[0]
+    x1_right, y1_top = rect1[1]
+    x2_left, y2_bottom = rect2[0]
+    x2_right, y2_top = rect2[1]
+    
+    intersect_left = max(x1_left, x2_left)
+    intersect_right = min(x1_right, x2_right)
+    intersect_bottom = max(y1_bottom, y2_bottom)
+    intersect_top = min(y1_top, y2_top)
+    
+    width = intersect_right - intersect_left
+    height = intersect_top - intersect_bottom
+    area = width * height
+    
+    return area
+print(intersectionAreaRect([(-3, 1), (9, 10)], [(-7, 0), (13, 12)]))
+print(intersectionAreaRect([(1, 1), (2, 2)], [(3, 0), (13, 1)]))
+print(intersectionAreaRect([(1, 1), (2, 2)], [(3, 17), (13, 1)]))
